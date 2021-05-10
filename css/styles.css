@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100vw;
+  min-height: 949px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container {
+  position: relative;
+  min-width: 375px;
+  min-height: 949px;
+  background: #ffffff;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-right: 24px;
+}
+
+h1 {
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  color: #333333;
+  align-self: flex-start;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.scarecrow-image {
+  margin-top: 64px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  width: 286px;
+  height: 238px;
+}
+
+.scarecrow-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+h2 {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+
+  /* Gray 1 */
+
+  color: #333333;
+
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+
+  margin-bottom: 66px;
+}
+
+button {
+  width: 216px;
+  height: 68px;
+  background-color: #333333;
+
+  padding: 24px 43px;
+
+  border: none;
+
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #bdbdbd;
+
+  bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .main,
+  .container {
+    width: 100vw;
+    height: 100vh;
+    min-height: auto;
+  }
+
+  .container {
+    padding-left: 41px;
+    padding-top: 21px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+  }
+
+  .scarecrow-image {
+    width: 288px;
+    height: 221px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    height: 101px;
+    width: 312px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: -0.0186655em;
+
+    margin-bottom: 36px;
+  }
+
+  p {
+    height: 87px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.0186655em;
+  }
+
+  button {
+    width: 216px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+  }
+
+  footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #bdbdbd;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 84px;
+  }
+
+  .scarecrow-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scarecrow-image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    width: 312px;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  p {
+    font-size: 17px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main,
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    padding-left: 77px;
+    padding-top: 40px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+  }
+
+  .scarecrow-image {
+    width: 539.2236938476562px;
+    height: 414.2492370605469px;
+    margin-top: 200px;
+  }
+
+  h2 {
+    height: 190px;
+    width: 586px;
+    margin-top: 200px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+  }
+
+  p {
+    width: 381px;
+    height: 108px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+  }
+
+  button {
+    width: 216px;
+    height: 68px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+
+    margin-bottom: 258px;
+  }
+
+  footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #bdbdbd;
+  }
+}
